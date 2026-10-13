@@ -1,16 +1,31 @@
-# IT1901 Group 8: Twitter Clone
+# Twitter Clone
 
-Welcome to group 8's Informatics Project I GitHub repository!
+A Twitter-style desktop app with a JavaFX client and a Spring Boot REST API. Users can log in, write posts, like and retweet, and view profiles.
 
-[Open repository in Eclipse Che](https://che.stud.ntnu.no/#https://git.ntnu.no/IT1901-2025-groups/gr2508?new)
+Group project in IT1901 Informatics, Project I at NTNU, fall 2025 (5 students).
 
-> [!NOTE]
-> To use Eclipse Che with a private repository such as this one:
->
-> - Generate a [personal access token (PAT)](https://git.ntnu.no/settings/tokens) on GitHub. Make sure it has repo read/write access.
-> - Provide this PAT to Eclipse Che in your [User Preferences](https://che.stud.ntnu.no/dashboard/#/user-preferences?tab=PersonalAccessTokens)
->
-> Otherwise, Eclipse Che won't have access to this repository and the instance you open will be empty.
+Java 17 · JavaFX · Spring Boot · REST · JWT · Hibernate · Maven · JUnit · Mockito · JaCoCo · SpotBugs · Checkstyle
+
+![Feed view](docs/images/feed-view.png)
+
+## Architecture
+
+The project is split into Maven modules:
+
+| Module | Responsibility |
+|---|---|
+| `core` | Domain classes (users, posts) |
+| `persistence` | Storage, both JSON files and a database through Hibernate |
+| `service` | Client-side services, including the HTTP client for the REST API |
+| `api` | Spring Boot REST API with JWT authentication |
+| `ui` | JavaFX client |
+
+## My contribution
+
+- Wrote unit tests with Mockito for the service and persistence modules, including `PostServiceTest`, `UserServiceTest` and the tests for the JSON and ORM repositories.
+- Took part in implementing the REST endpoints in `UserController` and `PostController`.
+- Cleaned up parts of the code base and made sure all modules had consistent JavaDoc.
+- Wrote documentation and took part in code reviews.
 
 ## Project Dependencies
 
@@ -135,7 +150,9 @@ This WiX version is deprecated, and should be upgraded as soon as the project ca
 
 </details>
 
-## Other Documentation
+<details>
+<summary>Course documentation (release 1–3)</summary>
+
 
 ### Release 1
 
@@ -172,7 +189,9 @@ This WiX version is deprecated, and should be upgraded as soon as the project ca
 - [UI and services class diagram](./docs/release3/ui-class-diagram.puml)
 - [Sequence diagram](./docs/release3/sequence-diagram.puml)
 
-### Diagrams
+</details>
+
+## Diagrams
 
 <details>
 
