@@ -6,7 +6,9 @@ Group project in IT1901 Informatics, Project I at NTNU, fall 2025 (5 students).
 
 Java 17 · JavaFX · Spring Boot · REST · JWT · Hibernate · Maven · JUnit · Mockito · JaCoCo · SpotBugs · Checkstyle
 
-![Feed view](docs/images/feed-view.png)
+![Feed view](docs/images/feed-demo.png)
+
+*The screenshot shows test data.*
 
 ## Architecture
 
